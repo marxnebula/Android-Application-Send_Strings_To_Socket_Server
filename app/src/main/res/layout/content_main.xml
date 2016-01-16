@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!-- Simple description of what the application does -->
+    <TextView
+        android:id="@+id/textdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descrip"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:textSize="15dp" />
+
+    <!-- Displays keyboard when touched. User enters in name -->
+    <EditText
+        android:id="@+id/editnametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="@string/hintname"
+        android:layout_marginTop="41dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/textdescription"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Displays calendar when touched.  User enters in birth date -->
+    <EditText
+        android:id="@+id/editbirthtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:focusable="false"
+        android:hint="@string/hintbirthdate"
+        android:textSize="15dp"
+        android:layout_below="@+id/editnametext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <!-- Sends data to socket server when touched -->
+    <Button
+        android:id="@+id/sendbutton"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:text="@string/button"
+        android:textSize="25dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/editbirthtext"
+        android:layout_alignLeft="@+id/editbirthtext"
+        android:layout_alignStart="@+id/editbirthtext"
+        android:layout_alignRight="@+id/editbirthtext"
+        android:layout_alignEnd="@+id/editbirthtext" />
+
+</RelativeLayout>

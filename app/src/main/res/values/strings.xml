@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KTS Task Send Info</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="button">Send</string>
+    <string name="hintname">Name</string>
+    <string name="hintbirthdate">Birth Date (MM/dd/yy)</string>
+    <string name="descrip">User enters name and birth date.  Click the SEND button to send the information to socket server.</string>
+</resources>
